@@ -1,0 +1,104 @@
+/* Default styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Setting uop the body */
+body {
+  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: #ffffff;
+}
+
+/* Restart */
+.restartWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.restartWrapper h1 {
+  font-size: 50px;
+}
+
+.restart {
+  margin-top: 25px;
+  height: 50px;
+  width: 150px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  text-align: center;
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Styling the game */
+
+.containerWrapper {
+  position: relative;
+}
+
+.btn {
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn-4, .btn-5, .btn-6, .btn-7, .btn-8, .btn-9 { border-top: 1px solid #ffffff;}
+.btn-1, .btn-2, .btn-4, .btn-5, .btn-7, .btn-8 { border-right: 1px solid #ffffff;}
+.btn-1, .btn-2, .btn-3, .btn-4, .btn-5, .btn-6 { border-bottom: 1px solid #ffffff;}
+.btn-2, .btn-3, .btn-5, .btn-6, .btn-8, .btn-9 { border-left: 1px solid #ffffff;}
+
+.x {
+  background-image: url(./assets/x.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.o {
+  background-image: url(./assets/o.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+/* Styling stats */
+.stats {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  margin-top: 75px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.stats p {
+  margin-block: 10px;
+}
+
+/* Block element */
+.disableGame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
